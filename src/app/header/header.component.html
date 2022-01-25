@@ -1,0 +1,10 @@
+<mat-toolbar>
+  <span>Where in the world?</span>
+  <span class="spacer"></span>
+  <div class="toggle">
+    <mat-slide-toggle [(ngModel)]="isChecked" (change)="onChanged($event)">
+      <mat-icon>{{ mode }}</mat-icon>
+    </mat-slide-toggle>
+  </div>
+</mat-toolbar>
+
